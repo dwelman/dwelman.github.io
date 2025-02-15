@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.bingo-cell {
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.bingo-cell.selected {
+    background-color: #a0e0a0;
+}
